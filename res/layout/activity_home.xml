@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="horizontal" >
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:weightSum="1.0" >
+
+                <GridView
+                    android:id="@+id/id_home_gridView_alert"
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:columnWidth="120dp"
+                    android:fadingEdge="none|vertical"
+                    android:horizontalSpacing="5dp"
+                    android:numColumns="4"
+                    android:padding="0dp"
+                    android:scrollbars="horizontal|none"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="5dp" >
+
+                </GridView>
+
+                <GridView
+                    android:id="@+id/id_home_gridView_tone"
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:columnWidth="120dp"
+                    android:fadingEdge="none|vertical"
+                    android:horizontalSpacing="5dp"
+                    android:numColumns="4"
+                    android:padding="0dp"
+                    android:scrollbars="horizontal|none"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="5dp" >
+
+                </GridView>
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/id_home_layoutBg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/id_home_imgBg"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/id_home_layout_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.2"
+                    android:background="@drawable/description_view_bg"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="GreenAlert-"
+                        android:textColor="#f6f51e"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/id_home_text_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="TextView"
+                        android:textSize="18dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center" >
+
+                    <Button
+                        android:id="@+id/id_home_btn_play"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/play" />
+
+                    <Button
+                        android:id="@+id/id_home_btn_set"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/set" />
+
+                    <Button
+                        android:id="@+id/id_home_btn_slide"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/slide" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/id_home_layout_preBg"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/introimage"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/id_home_layout_pre"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/collapsableintotext" >
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5" >
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
